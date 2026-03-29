@@ -8,7 +8,9 @@
 # testing
 /coverage
 
-
+# Next.js build cache
+/.next/
+/out/
 
 # misc
 .DS_Store
