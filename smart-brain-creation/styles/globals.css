@@ -1,0 +1,114 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #__next {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #ffffff !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.hero-section,
+.page-content,
+.home-main {
+  background-color: #ffffff;
+}
+
+.hero-section {
+  /* background-image is set via inline style in Layout.js */
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-content {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content .about-main-heading {
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Hide native scrollbar while preserving scroll functionality */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #ffffff !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body *::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.policy-page {
+  font-family: "Poppins", "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 1.75;
+  background: #fafafa;
+  border-radius: 14px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+  padding: 2.2rem 2.4rem;
+  margin: 2rem auto 2.8rem;
+  max-width: 1000px;
+}
+
+.policy-page h1 {
+  color: #4f2a9f;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: 0.65rem;
+}
+
+.policy-page h2 {
+  color: #5f117c;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-top: 1.65rem;
+  margin-bottom: 0.55rem;
+  letter-spacing: 0.02em;
+}
+
+.policy-page p,
+.policy-page ul,
+.policy-page li {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+}
+
+.policy-page ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.policy-page li {
+  margin-bottom: 0.45rem;
+}
+
+.policy-page a {
+  color: #4f2a9f;
+  text-decoration: underline;
+}
+
+.policy-page strong {
+  color: #3e216f;
+}
+

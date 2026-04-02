@@ -1,0 +1,296 @@
+/* ======================== Combined Labs Component Styles ======================== */
+.mylab-wrapper {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 3rem 1rem;
+  text-align: center;
+ 
+}
+
+.mylab-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5F117C;
+  margin-bottom: 0.5rem;
+  
+}
+
+.mylab-subheading {
+  font-size: 1.125rem;
+  color: #5F117C;
+  margin-bottom: 3.5rem;
+  font-weight: 400;
+}
+
+/* Tools Grid */
+.mylab-tools-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.mylab-tool-item {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #5F117C;
+  border-radius: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.mylab-tool-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.1);
+}
+
+.mylab-tool-icon-wrapper {
+  color: #5F117C;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mylab-tool-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #5F117C;
+}
+
+.mylab-tool-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Benefits */
+.mylab-benefits-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5F117C;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.mylab-benefits-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem 4rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mylab-benefit-item h3 {
+  color: #5F117C;
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mylab-benefit-item p {
+  font-size: 1.2rem;
+  color: #5F117C;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/* Labs Container Styles */
+.labs-wrapper {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ======================== Creative Lab Section ======================== */
+.creative-lab-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  max-width: 1200px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+.creative-lab-left,
+.creative-lab-right {
+  flex: 1 1 45%; /* allows flexible width with min 45% */
+  min-width: 300px; /* prevents shrinking too much on mobile */
+}
+
+.creative-lab-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  padding: 1rem;
+}
+
+.lab-image {
+  width: 100%;
+  min-height: 240px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+  background-color: #f9f5ff;
+}
+
+.creative-lab-right {
+  background: linear-gradient(to bottom right, #e9d5ff, #d8b4fe, #a78bfa);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.creative-lab-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lab-header h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
+  color: #4c1d95;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.lab-header p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #6b21a8;
+  line-height: 1.5;
+}
+
+.lab-section h2 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #4c1d95;
+  margin-bottom: 0.75rem;
+  word-break: break-word;
+}
+
+/* Activities Grid */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* adjusts automatically */
+  gap: 0.75rem;
+}
+
+.activity-item {
+  background: rgba(255, 255, 255, 0.9);
+  color: #5b21b6;
+  padding: 0.75rem 0.5rem;
+  border-radius: 2rem;
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Equipment List */
+.equipment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.equipment-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5b21b6;
+}
+
+.star {
+  color: #7c3aed;
+}
+
+.equipment-text {
+  font-weight: 500;
+}
+
+/* ======================== Responsive Design ======================== */
+@media (max-width: 768px) {
+  .mylab-tools-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .mylab-benefits-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mylab-heading,
+  .mylab-benefits-heading {
+    font-size: 2.5rem;
+  }
+
+  .creative-lab-container {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .creative-lab-left,
+  .creative-lab-right {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .lab-header h1 {
+    font-size: clamp(1.5rem, 6vw, 1.75rem);
+    text-align: center;
+  }
+
+  .lab-header p {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    text-align: center;
+  }
+
+  .lab-section h2 {
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    text-align: center;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .activity-item {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .activities-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 0.5rem;
+  }
+
+  .lab-header h1 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+  }
+
+  .lab-header p {
+    font-size: clamp(0.9rem, 4vw, 1rem);
+  }
+
+  .lab-section h2 {
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
+  }
+}
