@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./pages/Footer/Footer";
 
 import { homedata } from "../utils";
 
@@ -48,6 +49,7 @@ function Layout({ pathname, children }) {
       <div className="page-content">
         {children}
       </div>
+      <Footer />
     </div>
   );
 }

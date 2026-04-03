@@ -40,6 +40,26 @@ export const homedata = {
       maintext: "Our Creative Labs",
       paragraph:
         "State-of-the-art facilities designed to inspire creativity and provide hands-on learning experiences in both traditional and digital art forms.",
+      btn: "Explore Labs",
+      btn2: "Contact us",
+    },
+    "/terms": {
+      maintext: "Terms & Conditions",
+      paragraph: "Read the terms for using Smart Brain Creations.",
+      btn: "View Terms",
+      btn2: "Contact us",
+    },
+    "/privacy": {
+      maintext: "Privacy Policy",
+      paragraph: "Learn how we collect and protect your data.",
+      btn: "View Privacy Policy",
+      btn2: "Contact us",
+    },
+    "/disclaimer": {
+      maintext: "Disclaimer",
+      paragraph: "Understand usage limitations and responsibility disclaimers.",
+      btn: "Read Disclaimer",
+      btn2: "Contact us",
     },
   };
   

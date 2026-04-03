@@ -3,7 +3,6 @@
 import React from "react";
 import { FaPaintBrush, FaCode, FaCubes, FaGamepad } from "react-icons/fa";
 import { SiFigma, SiAdobe } from "react-icons/si";
-import Footer from "../Footer/Footer";
 import { labsData, tools, benefits } from "../../../utils";
 import LabSection from "../../LabSection"
 
@@ -102,7 +101,6 @@ const Labs = () => {
         </div>
       ))}
       <LabSection/>
-      <Footer />
     </div>
   );
 };

@@ -35,30 +35,29 @@
   margin: 0 auto 80px;
   gap: 40px;
   align-items: center;
-  
+  padding: 0 20px;
 }
 
 .top-left {
   flex: 1;
   min-width: 300px;
-  
   text-align: center;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
   margin-bottom: 24px;
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
-  
-  color: white;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
 .desc {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.7;
   color: #e0e0e0;
+  font-weight: 400;
 }
 
 .top-right {
@@ -86,23 +85,25 @@
 /* ======= ABOUT ======= */
 .about-section {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 60px;
-   
-text-align: center;
+  padding: 40px 20px;
 }
 
 .about-section h2 {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 5vw, 2.2rem);
   margin-bottom: 20px;
   color: #fff;
-  
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .about-section p {
   color: #e0e0e0;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 /* ======= STATS ======= */
@@ -113,53 +114,58 @@ text-align: center;
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto 80px;
+  padding: 0 20px;
 }
 
 .stat-card {
   text-align: center;
   padding: 30px 20px;
- background: linear-gradient(145deg, #5F117C 5%, #FFFFFF 100%);
+  background: rgba(95, 17, 124, 0.15);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-     
-
+  min-width: 140px;
 }
 
 .stat-card:hover {
   transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .stat-value {
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
-  color: transparent;
-   
-   color: #5F117C;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffa500;
+  margin-bottom: 8px;
 }
 
 .stat-label {
-  color: #5F117C;
-  font-size: 1.1rem;
+  color: #e0e0e0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 500;
 }
 
 /* ======= LAUNCHING ======= */
 .launching {
   text-align: center;
   margin: 0 auto 50px;
+  padding: 0 20px;
 }
 
 .launching-title {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 5vw, 2.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .launching-desc {
-  color: #ddd;
-  
+  color: #e0e0e0;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 400;
 }
 
 /* ======= HOPSCAPE CARD ======= */
@@ -168,9 +174,10 @@ text-align: center;
   max-width: 1100px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
 }
 
 .image-section {
@@ -179,6 +186,7 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   border-right: 2px solid rgba(255, 255, 255, 0.1);
+  min-height: 300px;
 }
 
 .content-section {
@@ -188,17 +196,19 @@ text-align: center;
 }
 
 .game-title {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
   margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
 }
 
 .game-desc {
-  font-size: 14px;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.7;
   color: #e8e8e8;
   margin-bottom: 18px;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Buttons */
@@ -206,12 +216,13 @@ text-align: center;
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 8px 20px;
-  font-size: 13px;
+  padding: 10px 24px;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
   border-radius: 6px;
   margin-bottom: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 600;
 }
 
 .know-more-btn:hover {
@@ -226,7 +237,7 @@ text-align: center;
 }
 
 .star {
-  font-size: 28px;
+  font-size: 24px;
   color: #ffd700;
 }
 
@@ -235,7 +246,7 @@ text-align: center;
   border: none;
   color: #4a2c5e;
   padding: 12px 32px;
-  font-size: 15px;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
@@ -255,6 +266,7 @@ text-align: center;
   gap: 20px;
   max-width: 1100px;
   margin: 60px auto;
+  padding: 0 20px;
 }
 
 .game-screenshot {
@@ -273,7 +285,7 @@ text-align: center;
 .screenshot-placeholder img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* ======= RESPONSIVE ======= */
@@ -285,10 +297,21 @@ text-align: center;
   .image-section {
     width: 100%;
     height: 300px;
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   }
 
   .content-section {
     padding: 30px 40px;
+  }
+
+  .gamezone-top {
+    flex-direction: column;
+  }
+
+  .top-left,
+  .top-right {
+    width: 100%;
   }
 }
 
@@ -303,16 +326,66 @@ text-align: center;
 
   .game-screenshot {
     width: calc(50% - 10px);
+    height: 220px;
+  }
+
+  .content-section {
+    padding: 28px 24px;
+  }
+
+  .game-title {
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
   }
 }
 
 @media (max-width: 480px) {
+  .gamezone-top {
+    padding: 0 12px;
+  }
+
   .game-title {
-    font-size: 28px;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
   }
 
   .game-screenshot {
     width: 100%;
-    height: 240px;
+    height: auto;
+    max-height: 280px;
+  }
+
+  .game-gallery {
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .hopscape-card {
+    padding: 0 12px;
+  }
+
+  .content-section {
+    padding: 20px 16px;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+
+  .know-more-btn,
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .stat-card {
+    padding: 20px 16px;
+    min-width: 120px;
+  }
+
+  .stat-value {
+    font-size: 2rem;
   }
 }

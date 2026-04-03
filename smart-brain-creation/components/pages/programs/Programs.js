@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Footer/Footer"
 import FoundationCard from "../../FoundationCard";
 import { programsData } from "../../../utils";
 
@@ -30,7 +29,6 @@ const Programs = () => {
         ))}
 
       </div>
-      <Footer />
     </div>
   );
 };

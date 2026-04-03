@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import GameZoneNavbar from "./game/Game section Navbar/GameZoneNavbar";
+import Footer from "./pages/Footer/Footer";
 
 import { gameHomeData } from "./game/gameutils";
 
@@ -46,6 +47,7 @@ function GameLayout({ pathname, children }) {
       <div className="gamezone-page-content">
         {children}
       </div>
+      <Footer />
     </div>
   );
 }

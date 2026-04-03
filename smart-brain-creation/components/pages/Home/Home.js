@@ -96,7 +96,6 @@
 // export default Home;
 
 import React from "react";
-import Footer from "../Footer/Footer";
 import Link from "next/link";
 import { homecontent } from "../../../utils";
 
@@ -194,8 +193,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
