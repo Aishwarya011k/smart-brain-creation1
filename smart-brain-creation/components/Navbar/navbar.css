@@ -146,8 +146,8 @@
 .logo {
     height: 3.2rem;
     width: auto;
-    display: flex;
-    align-items: center;
+    display: block;
+    object-fit: contain;
     z-index: 1001;
 }
 
