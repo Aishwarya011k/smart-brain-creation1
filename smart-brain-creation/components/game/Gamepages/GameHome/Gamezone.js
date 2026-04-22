@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import Link from "next/link";
 
 const Gamezone = () => {
   const images = [
@@ -14,12 +15,12 @@ const Gamezone = () => {
     { value: "200+", label: "Student Collaborators" },
     { value: "10K+", label: "Active Players" },
   ];
-  const gameImages = [
-    "/gamescreenshot.png",
-    "/gamescreenshot1.png",
-    "/gamescreenshot2.png",
-    "/gamescreenshot3.png",
-    "/gamescreenshot4.png",
+  const zorunImages = [
+    "/zorun-images/1.png",
+    "/zorun-images/2.png",
+    "/zorun-images/3.png",
+    "/zorun-images/4.png",
+    "/zorun-images/5.png",
   ];
 
   return (
@@ -69,17 +70,19 @@ const Gamezone = () => {
         <p className="launching-desc">Real games, real impact, created with student collaboration</p>
       </div>
 
-      {/* ======= HOPSCAPE CARD ======= */}
-      <div className="hopscape-card">
-        <div className="image-section" style={{ backgroundImage: `url(/gamehomeimage.png)` }}></div>
+      {/* ======= ZORUN CARD ======= */}
+      <div className="zorun-card">
+        <div className="image-section" style={{ backgroundImage: `url(/zorun-images/1.png)` }}></div>
 
         <div className="content-section">
-          <h1 className="game-title">Hopscape</h1>
+          <h1 className="game-title">Zorun</h1>
           <p className="game-desc">
-            Explore our first-ever student-powered games — unique creations where imagination meets technology, and ideas transform into interactive adventures. Every challenge, character, and storyline is crafted with creativity, shaped by design, and powered by innovation.
+            Experience the ultimate action-packed adventure! Zorun is a unique combination of fast-paced arcade shooting and memory-challenging gameplay. Protect a dancing cat from attacking zombies by tapping quickly, then answer memory questions to reload your ammo. Every challenge, character, and storyline is crafted with creativity, shaped by design, and powered by innovation.
           </p>
 
-          <button className="know-more-btn">Know more</button>
+          <Link href="/gamezone/zorun">
+            <button className="know-more-btn">Know more</button>
+          </Link>
 
           <div className="rating">
             <span className="star">★</span>
@@ -95,7 +98,7 @@ const Gamezone = () => {
 
       {/* ======= GAME GALLERY ======= */}
       <div className="game-gallery">
-        {gameImages.map((img, idx) => (
+        {zorunImages.map((img, idx) => (
           <div key={idx} className="game-screenshot">
             <div className="screenshot-placeholder">
               <img src={img} alt={`Screenshot ${idx + 1}`} />

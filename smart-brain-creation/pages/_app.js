@@ -16,6 +16,7 @@ import '../components/game/Gamepages/GameHome/GameDivision.css'
 import '../components/game/Game section Navbar/Gamezonerouter.css'
 import '../components/game/Gamepages/GameAbout/GameAbout.css'
 import '../components/game/Game section Navbar/gamezonenavbar.css'
+import '../components/game/Gamepages/GameHome/zorun.module.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
