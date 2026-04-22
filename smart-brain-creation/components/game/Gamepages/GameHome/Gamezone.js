@@ -91,8 +91,10 @@ const Gamezone = () => {
             <span className="star">★</span>
             <span className="star">★</span>
           </div>
-
+          
+          <Link href="https://play.google.com/store/apps/details?id=com.ZorunVersion" target="_blank" rel="noopener noreferrer">
           <button className="download-btn">Download</button>
+          </Link>
         </div>
       </div>
 

@@ -292,7 +292,8 @@
 
 /* ======= RESPONSIVE ======= */
 @media (max-width: 992px) {
-  .hopscape-card {
+  .hopscape-card,
+  .zorun-card {
     flex-direction: column;
   }
 
@@ -322,8 +323,14 @@
     grid-template-columns: 1fr;
   }
 
-  .hopscape-card {
+  .hopscape-card,
+  .zorun-card {
     width: 100%;
+    padding: 0 16px;
+  }
+
+  .zorun-card .image-section {
+    height: 250px;
   }
 
   .game-screenshot {
@@ -332,7 +339,7 @@
   }
 
   .content-section {
-    padding: 28px 24px;
+    padding: 24px 20px;
   }
 
   .game-title {
@@ -360,7 +367,8 @@
     padding: 0 12px;
   }
 
-  .hopscape-card {
+  .hopscape-card,
+  .zorun-card {
     padding: 0 12px;
   }
 
@@ -368,7 +376,7 @@
     padding: 20px 16px;
   }
 
-  .image-section {
+  .zorun-card .image-section {
     height: 200px;
   }
 
