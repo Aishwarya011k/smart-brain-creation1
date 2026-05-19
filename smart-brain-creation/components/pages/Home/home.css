@@ -245,51 +245,6 @@
   opacity: 0.9;
 }
 
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(240px, 1fr));
-  gap: 18px;
-  width: 100%;
-}
-
-.why-card {
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid #efe5f6;
-  background: #ffffff;
-  box-shadow: 0 10px 20px rgba(95, 17, 124, 0.08);
-}
-
-.why-card h3 {
-  margin: 0 0 8px 0;
-  color: #5f117c;
-  font-size: 1.1rem;
-}
-
-.why-card p {
-  margin: 0;
-  color: #46105e;
-  line-height: 1.5;
-}
-
-.why-cta {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-}
-
-.why-cta h3 {
-  margin: 0;
-  color: #5f117c;
-}
-
-.why-cta p {
-  margin: 0;
-  color: #46105e;
-}
-
 .cta-strip {
   background: #f8f0ff;
   border-radius: 20px;
@@ -310,8 +265,7 @@
 @media (max-width: 900px) {
   .offer-grid,
   .about-grid,
-  .process-steps,
-  .why-grid {
+  .process-steps {
     grid-template-columns: 1fr;
   }
 

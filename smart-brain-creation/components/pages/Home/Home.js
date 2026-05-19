@@ -230,47 +230,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-block why-block">
-        <p className="section-kicker">Why It Works</p>
-        <h2 className="section-title">Designed for Schools. Built for Students.</h2>
-        <p className="section-subtitle">
-          A complete, hassle-free solution that integrates seamlessly into your school system.
-        </p>
-        <div className="why-grid">
-          <div className="why-card">
-            <h3>Plug-and-Play Solution</h3>
-            <p>No complex setup or management needed from the school&apos;s side. We deploy everything.</p>
-          </div>
-          <div className="why-card">
-            <h3>No Burden on School Staff</h3>
-            <p>Our trained faculty handles all sessions — your existing staff continues their regular work.</p>
-          </div>
-          <div className="why-card">
-            <h3>Industry-Relevant Curriculum</h3>
-            <p>Syllabus aligned with AVGC industry standards, ensuring students learn market-ready skills.</p>
-          </div>
-          <div className="why-card">
-            <h3>Engaging & Interactive</h3>
-            <p>Project-based, hands-on learning keeps students motivated and excited about every session.</p>
-          </div>
-          <div className="why-card">
-            <h3>Measurable Outcomes</h3>
-            <p>Track student progress through real projects, portfolios, and annual showcases.</p>
-          </div>
-          <div className="why-card">
-            <h3>Boost School Reputation & Admissions</h3>
-            <p>Schools offering creative technology programs stand out, attract more admissions, and build a future-ready reputation.</p>
-          </div>
-        </div>
-        <div className="why-cta">
-          <h3>Transform Your School Today</h3>
-          <p>Join schools that are already building the next generation of creators</p>
-          <Link href="/contact">
-            <button className="primary-cta">Get Started</button>
-          </Link>
-        </div>
-      </section>
-
       <section className="cta-strip">
         <h2>Ready to Transform Your School?</h2>
         <div className="pill-row">

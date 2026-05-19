@@ -66,7 +66,7 @@ function Navbar() {
           
          
           
-          <button className='bookLiveDemo mobile-bookLiveDemo'>Book LIVE Demo</button>
+          <button href="/contact" className='bookLiveDemo mobile-bookLiveDemo'>Book LIVE Demo</button>
         </div>
       </div>
     </nav>
