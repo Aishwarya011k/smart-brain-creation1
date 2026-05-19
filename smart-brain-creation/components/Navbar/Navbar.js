@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { IoGameControllerOutline } from "react-icons/io5";
 import { FiMenu, FiX } from "react-icons/fi";
 
 function Navbar() {
@@ -36,15 +35,13 @@ function Navbar() {
         <Link href="/about" className={isActiveLink('/about') ? 'active' : ''} onClick={closeMenu}>About Us</Link>
         <Link href="/programs" className={isActiveLink('/programs') ? 'active' : ''} onClick={closeMenu}>Programs</Link>
         <Link href="/labs" className={isActiveLink('/labs') ? 'active' : ''} onClick={closeMenu}>Labs</Link>
-        {/* <Link href="/events" className={isActiveLink('/events') ? 'active' : ''} onClick={closeMenu}>Events</Link> */}
+        <Link href="/whyitworks" className={isActiveLink('/whyitworks') ? 'active' : ''} onClick={closeMenu}>Why It Works</Link>
+        <Link href="/showcase" className={isActiveLink('/showcase') ? 'active' : ''} onClick={closeMenu}>Showcase</Link>
         <Link href="/contact" className={isActiveLink('/contact') ? 'active' : ''} onClick={closeMenu}>Contact Us</Link>
         
-        <Link href="/gamezone">
-        <button className='gameZone'>
-          <IoGameControllerOutline className='icons' /> GameZone
-        </button>
-        </Link>
+        <Link href="/gamezone" className={isActiveLink('/gamezone') ? 'active' : ''} onClick={closeMenu}>GameZone</Link>
         
+        <button className='bookLiveDemo'>Book LIVE Demo</button>
       </div>
 
       {/* Hamburger Icon for Mobile */}
@@ -62,13 +59,14 @@ function Navbar() {
           <Link href="/about" className={isActiveLink('/about') ? 'active' : ''} onClick={closeMenu}>About Us</Link>
           <Link href="/programs" className={isActiveLink('/programs') ? 'active' : ''} onClick={closeMenu}>Programs</Link>
           <Link href="/labs" className={isActiveLink('/labs') ? 'active' : ''} onClick={closeMenu}>Labs</Link>
-          {/* <Link href="/events" className={isActiveLink('/events') ? 'active' : ''} onClick={closeMenu}>Events</Link> */}
+          <Link href="/whyitworks" className={isActiveLink('/whyitworks') ? 'active' : ''} onClick={closeMenu}>Why It Works</Link>
+          <Link href="/showcase" className={isActiveLink('/showcase') ? 'active' : ''} onClick={closeMenu}>Showcase</Link>
           <Link href="/contact" className={isActiveLink('/contact') ? 'active' : ''} onClick={closeMenu}>Contact Us</Link>
+           <Link href="/gamezone" className={isActiveLink('/gamezone') ? 'active' : ''} onClick={closeMenu}>GameZone</Link>
           
-          <Link href="/gamezone">
-         <button className='gameZone mobile-gameZone'>
-            <IoGameControllerOutline className='icons' /> GameZone
-          </button> </Link>
+         
+          
+          <button className='bookLiveDemo mobile-bookLiveDemo'>Book LIVE Demo</button>
         </div>
       </div>
     </nav>

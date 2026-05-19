@@ -12,6 +12,11 @@ const routeBackgrounds = {
   "/contact": "/contact.png",
   "/events": "/background.jpg",
   "/labs": "/labs.png",
+  "/showcase": "/background.jpg",
+  "/gamezone": "/gamehomeimage.png",
+  "/gamezone/about": "/gamezone.png",
+  "/gamezone/contact": "/gamecontact.png",
+  "/gamezone/terms": "/gamehomeimage.png",
 };
 
 function Layout({ pathname, children }) {
@@ -20,6 +25,8 @@ function Layout({ pathname, children }) {
     "https://picsum.photos/1200/800";
 
   const content = homedata[pathname];
+  const isHome = pathname === "/";
+  
   return (
     <div>
       <div
@@ -27,15 +34,34 @@ function Layout({ pathname, children }) {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <Navbar />
-        <div className="hero-content">
+        <div className={`hero-content ${isHome ? 'hero-left-align' : ''}`}>
           <div className="words">
             {content ? (
               <>
                 <h1>{content.maintext}</h1>
+                {content.subtitle && <h2 className="hero-subtitle">{content.subtitle}</h2>}
                 <p>{content.paragraph}</p>
+                
+                {/* Badges */}
+                {content.badges && content.badges.length > 0 && (
+                  <div className="hero-badges">
+                    {content.badges.map((badge, idx) => (
+                      <span key={idx} className="badge">{badge}</span>
+                    ))}
+                  </div>
+                )}
+                
                 <div className="hero-buttons">
-                  {content.btn && <Link href="/programs"><button className="btn1">{content.btn}</button></Link>}
-                  {content.btn2 && <Link href="/contact"><button className="btn2">{content.btn2}</button></Link>}
+                  {content.btn && (
+                    <Link href={pathname === "/" ? "/contact" : "/programs"}>
+                      <button className="btn1">{content.btn}</button>
+                    </Link>
+                  )}
+                  {content.btn2 && (
+                    <Link href={pathname === "/" ? "/labs" : "/contact"}>
+                      <button className="btn2">{content.btn2}</button>
+                    </Link>
+                  )}
                 </div>
               </>
             ) : (

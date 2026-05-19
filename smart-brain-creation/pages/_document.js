@@ -5,7 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Smart Brain Creations - Creative & Digital Education</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content="Smart Brain Creations - Creative & Digital Education for Future-Ready Students. Empowering young minds through innovative learning experiences." />
           <meta name="keywords" content="creative education, digital learning, future-ready students, online courses, innovative learning" />
@@ -48,6 +47,12 @@ class MyDocument extends Document {
                 'name': 'Smart Brain Creations',
                 'url': 'https://www.smartbraincreations.com',
                 'logo': 'https://www.smartbraincreations.com/logo.png',
+                'image': {
+                  '@type': 'ImageObject',
+                  'url': 'https://www.smartbraincreations.com/logo.png',
+                  'width': 512,
+                  'height': 512
+                },
                 'description': 'Creative & Digital Education for Future-Ready Students',
                 'sameAs': [
                   'https://www.facebook.com/smartbraincreations',
@@ -60,6 +65,17 @@ class MyDocument extends Document {
                   'addressRegion': 'Karnataka',
                   'addressCountry': 'IN'
                 }
+              })
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                'name': 'Smart Brain Creations',
+                'url': 'https://www.smartbraincreations.com'
               })
             }}
           />

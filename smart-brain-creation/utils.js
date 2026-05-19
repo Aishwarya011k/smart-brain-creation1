@@ -5,10 +5,12 @@ import { FaGraduationCap } from "react-icons/fa6";
 
 export const homedata = {
     "/": {
-      maintext: "Creative & Digital Education for Future-Ready Students",
-      paragraph: "Digital Media. Design. Innovation. All from inside your school.",
-      btn: "Explore Programs",
-      btn2: "Contact us",
+     
+      maintext: "Turn Your School Into a Future-Ready Creative Lab",
+      paragraph: "Hands-on programs in Design, Animation, AI & Game Development for Classes 1–12 — aligned with NEP 2020 and India's AVGC sector.",
+      badges: ["No Cost", "No Commitment"],
+      btn: "Book Your School's FREE Demo",
+      btn2: "Learn More",
     },
     "/about": {
       maintext: "About SmartBrain Creations",
@@ -43,6 +45,20 @@ export const homedata = {
       btn: "Explore Labs",
       btn2: "Contact us",
     },
+    "/showcase": {
+      maintext: "Showcase",
+      paragraph:
+        "Real work. Real learning. Real output. See how students turn ideas into games, designs, and digital art.",
+      btn: "Book FREE Demo",
+      btn2: "Explore Game Dev",
+    },
+    "/whyitworks": {
+      maintext: "Why It Works",
+      paragraph:
+        "Designed for schools. Built for students. A complete, hassle-free solution that integrates seamlessly into your school system.",
+      btn: "Get Started",
+      btn2: "Contact us",
+    },
     "/terms": {
       maintext: "Terms & Conditions",
       paragraph: "Read the terms for using Smart Brain Creations.",
@@ -59,6 +75,30 @@ export const homedata = {
       maintext: "Disclaimer",
       paragraph: "Understand usage limitations and responsibility disclaimers.",
       btn: "Read Disclaimer",
+      btn2: "Contact us",
+    },
+    "/gamezone": {
+      maintext: "GameZone",
+      paragraph: "Explore interactive games and creative experiences designed for students.",
+      btn: "Explore Games",
+      btn2: "Learn More",
+    },
+    "/gamezone/about": {
+      maintext: "About GameZone",
+      paragraph: "Discover how our game-based learning platform transforms education.",
+      btn: "Explore Games",
+      btn2: "Contact us",
+    },
+    "/gamezone/contact": {
+      maintext: "Contact GameZone",
+      paragraph: "Get in touch with our team for inquiries about our gaming platform.",
+      btn: "Send Message",
+      btn2: "Back",
+    },
+    "/gamezone/terms": {
+      maintext: "GameZone Terms",
+      paragraph: "Read the terms and conditions for using GameZone.",
+      btn: "View Terms",
       btn2: "Contact us",
     },
   };
