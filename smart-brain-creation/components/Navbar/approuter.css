@@ -29,7 +29,20 @@
     text-align: center;
     margin-top: 2rem;
     flex-grow: 1;
-   
+}
+
+.hero-content.hero-left-align {
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.hero-content.hero-left-align .words {
+    text-align: left;
+    width: 100%;
+}
+
+.hero-content.hero-left-align .hero-buttons {
+    justify-content: flex-start;
 }
 
 .words {
@@ -49,11 +62,38 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 .hero-content p {
     font-size: clamp(1rem, 2.5vw, 1.4rem);
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+}
+
+.hero-badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-buttons {
@@ -90,13 +130,22 @@
 }
 
 .btn1:hover {
-    background: #7d1aa5;
+    background: #46105e;
     transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 .btn2:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
+}
+
+.hero-content.hero-left-align .btn1 {
+    background: #5f117c;
+}
+
+.hero-content.hero-left-align .btn1:hover {
+    background: #46105e;
 }
 
 .page-content {
@@ -140,6 +189,30 @@
     
     .hero-content {
         margin-top: 1rem;
+    }
+    
+    .hero-content.hero-left-align .words {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .hero-buttons {
+        gap: 1rem;
+    }
+    
+    .btn1, .btn2 {
+        padding: 10px 20px;
+        min-width: 140px;
+        font-size: 0.95rem;
+    }
+    
+    .hero-badges {
+        gap: 0.8rem;
+    }
+    
+    .badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
     }
 }
 

@@ -1,10 +1,10 @@
-import GameLayout from '../../components/GameLayout';
+import Layout from '../../components/Layout';
 import Terms from '../../components/game/Gamepages/Terms.js/Terms';
 
 export default function TermsPage() {
   return (
-    <GameLayout pathname="/gamezone/terms">
+    <Layout pathname="/gamezone/terms">
       <Terms />
-    </GameLayout>
+    </Layout>
   );
 }

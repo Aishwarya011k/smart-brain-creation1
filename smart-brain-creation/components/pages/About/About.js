@@ -41,6 +41,7 @@ const About = () => {
             <img src="/aboutimg-2.png" alt="Our Mission" />
           </div>
         </div>
+
       </div>
 
       {/* last line */}

@@ -29,8 +29,7 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: nowrap;
 }
 
 .navbar-btns > a {

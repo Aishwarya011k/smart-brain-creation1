@@ -1,10 +1,10 @@
-import GameLayout from '../../components/GameLayout';
+import Layout from '../../components/Layout';
 import Gamezone from '../../components/game/Gamepages/GameHome/Gamezone';
 
 export default function GamezonePage() {
   return (
-    <GameLayout pathname="/gamezone">
+    <Layout pathname="/gamezone">
       <Gamezone />
-    </GameLayout>
+    </Layout>
   );
 }

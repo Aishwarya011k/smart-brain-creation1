@@ -1,10 +1,10 @@
-import GameLayout from '../../components/GameLayout';
+import Layout from '../../components/Layout';
 import GameContact from '../../components/game/Gamepages/GameContact/GameContact';
 
 export default function GameContactPage() {
   return (
-    <GameLayout pathname="/gamezone/contact">
+    <Layout pathname="/gamezone/contact">
       <GameContact />
-    </GameLayout>
+    </Layout>
   );
 }
